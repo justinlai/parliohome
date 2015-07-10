@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <title>parliohome</title>
+    <title>Parlio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,6 +12,7 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/fullpage.js/jquery.fullPage.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -26,22 +27,24 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    
+<!--     <div class="header">
+<div id="nav-scroller"
+  <nav>
+    <a href="#sect1" class="cbp-fbcurrent">Section 1</a>
+    <a href="#sect2">Section 2</a>
+    <a href="#fbsection3">Section 3</a>
+    <a href="#fbsection4">Section 4</a>
+    <a href="#fbsection5">Section 5</a>
+  </nav>
+</div> -->
+<div id="fullpage">
+  <div class="section">
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">parliohome</h3>
-      </div>
-
       <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+        <h1>Parlio</h1>
+        <p><a class="btn btn-default" href="#">Button1</span></a></p>
+        <p><a class="btn btn-default" href="#">Button2</span></a></p>
+        <p><a class="btn btn-default" href="#">Button3</span></a></p>
       </div>
 
       <div class="row marketing">
@@ -61,17 +64,38 @@
           
         </div>
       </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
     </div>
+  </div>
+
+  <div class="section" id="sect1">
+    <div class="text-wrap">
+      <h1>Parlio is about perspectives</h1>
+      <p>This is the copy for the first segment</p>
+    </div>
+  </div>
+  <div class="section" id="sect2">
+    <div class="text-wrap">
+      <h1>Parlio is a community</h1>
+      <p>This is the copy for the second segment</p>
+    </div>
+  </div>
+  <div class="section">
+    <h1>Parlio is for you</h2>
+    <p><a class="btn btn-default" href="#">Button3</span></a></p>
+  </div>
     
+    
+</div>
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

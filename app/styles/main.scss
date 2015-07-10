@@ -2,7 +2,34 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/fullpage.js/jquery.fullPage.scss";
 // endbower
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -36,6 +63,11 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}
+
+// /*NAVBAR*/
+#fp-nav {
+  margin-right: 2em;
 }
 
 /* Custom page footer */
@@ -90,4 +122,12 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* Sections */
+.section {
+  text-align: center;
+  background-color: white;
+  border: 30px solid #E4E4E4;
+  background-clip: padding-box;
 }
