@@ -56,16 +56,74 @@
   </div>
 
   <div class="section panel" id="sect2">
-    <div class="text-wrap">
-      <h1>Parlio is about perspectives</h1>
-      <p>This is the copy for the first segment</p>
-    </div>
-    <div class="circle"></div>
-  </div>
+    <div class="section-wrapper">
+    <div class="circle-one"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="heading">
+                <h1>Parlio is about perspectives</h1>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="cards-wrapper">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card-container"> 
+                        <div class="card"> 
+                          <div class="face front"> 
+                            Front
+                          </div> 
+                          <div class="face back"> 
+                            Back
+                          </div> 
+                        </div> 
+                      </div> 
+                  </div><!--end col-md-4 -->
+                  <div class="col-md-4">
+                     <div class="card-container"> 
+                        <div class="card"> 
+                          <div class="face front"> 
+                            Front
+                          </div> 
+                          <div class="face back"> 
+                            Back
+                          </div> 
+                        </div> 
+                      </div>                
+                  </div><!--end col-md-4 -->
+                  <div class="col-md-4">
+                     <div class="card-container"> 
+                        <div class="card"> 
+                          <div class="face front"> 
+                            Front
+                          </div> 
+                          <div class="face back"> 
+                            Back
+                          </div> 
+                        </div> 
+                      </div>                
+                  </div><!--end col-md-4 -->
+                </div>
+              </div>
+            </div><!--end col-md-8 -->
+          </div><!--end row -->
+        </div><!--end col-md-12 -->
+      </div><!--end row -->
+    </div><!--end container-->
+  </div><!--end section-wrapper-->
+</div><!--end section -->
   <div class="section panel" id="sect3">
-    <div class="text-wrap">
-      <h1>Parlio is a community</h1>
-      <p>This is the copy for the second segment</p>
+    <div class="row">
+      <div class="col-md-8">
+        <h1>CIRCLE WILL EXPAND HERE</h1>
+      </div>
+      <div class="col-md-4">
+        <h1>Parlio is a community</h1>
+        <p>This is the copy for the second segment</p>
+      </div>
     </div>
   </div>
   <div class="section panel" id="sect4">
@@ -85,6 +143,7 @@
     <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
     <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
     <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script src="/bower_components/bounce.js/bounce.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -129,6 +188,14 @@
             .addTo(controller);
         }
       });
+    </script>
+    <script>
+        $('.card-container').click(function(){
+        $(this).find('.card').addClass('flipped').mouseleave(function(){
+            $(this).removeClass('flipped');
+        });
+        return false;
+    });
     </script>
     <!-- endbuild -->
 
