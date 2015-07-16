@@ -13,6 +13,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/fullpage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -39,8 +40,8 @@
 </div> -->
 <div id="fullpage">
   <div class="section panel" id="sect1">
+
     <div class="container">
-        <div class="circle-one"></div>
       <div class="jumbotron">
         <h1>Parlio</h1>
         <p><a class="btn btn-default" href="#">Button1</span></a></p>
@@ -57,8 +58,8 @@
   </div>
 
   <div class="section panel" id="sect2">
+        <div class="wow circle-one bounceInUp"></div>
     <div class="section-wrapper">
-    <div class="circle-two"></div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -71,44 +72,30 @@
             <div class="col-md-8">
               <div class="cards-wrapper">
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="card-container"> 
-                        <div class="card"> 
-                          <div class="face front"> 
-                            Front
-                          </div> 
-                          <div class="face back"> 
-                            Back
-                          </div> 
-                        </div> 
-                      </div> 
-                  </div><!--end col-md-4 -->
-                  <div class="col-md-4">
-                     <div class="card-container"> 
-                        <div class="card"> 
-                          <div class="face front"> 
-                            Front
-                          </div> 
-                          <div class="face back"> 
-                            Back
-                          </div> 
-                        </div> 
-                      </div>                
-                  </div><!--end col-md-4 -->
-                  <div class="col-md-4">
-                     <div class="card-container"> 
-                        <div class="card"> 
-                          <div class="face front"> 
-                            Front
-                          </div> 
-                          <div class="face back"> 
-                            Back
-                          </div> 
-                        </div> 
-                      </div>                
-                  </div><!--end col-md-4 -->
-                </div>
-              </div>
+                  <div class="card-container"> 
+                    <div class="card"> 
+                      <div class="face front">Front</div> 
+                      <div class="face back">Back</div> 
+                    </div>   
+                  </div> 
+                </div><!--end row-->
+                <div class="row">
+                  <div class="card-container"> 
+                    <div class="card"> 
+                      <div class="face front">Front</div> 
+                      <div class="face back">Back</div> 
+                    </div>   
+                  </div> 
+                </div><!--end row-->
+                <div class="row">
+                  <div class="card-container"> 
+                    <div class="card"> 
+                      <div class="face front">Front</div> 
+                      <div class="face back">Back</div> 
+                    </div>   
+                  </div> 
+                </div><!--end row-->
+              </div><!--end cards-wrapper-->
             </div><!--end col-md-8 -->
           </div><!--end row -->
         </div><!--end col-md-12 -->
@@ -116,18 +103,22 @@
     </div><!--end container-->
   </div><!--end section-wrapper-->
 </div><!--end section -->
+
   <div class="section panel" id="sect3">
+    <div class="wow circle-one bounceInUp"></div>
     <div class="row">
       <div class="col-md-8">
         <h1>CIRCLE WILL EXPAND HERE</h1>
       </div>
       <div class="col-md-4">
+
         <h1>Parlio is a community</h1>
         <p>This is the copy for the second segment</p>
       </div>
     </div>
   </div>
   <div class="section panel" id="sect4">
+    <div class="wow circle-one bounceInDown"></div>
     <h1>Parlio is for you</h2>
     <p><a class="btn btn-default" href="#">Button3</span></a></p>
   </div>
@@ -144,7 +135,7 @@
     <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
     <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
     <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
-    <script src="/bower_components/bounce.js/bounce.min.js"></script>
+    <script src="/bower_components/wow.js/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -168,27 +159,7 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <script>
-      $(function () { // wait for document ready
-        // init
-        var controller = new ScrollMagic.Controller({
-          globalSceneOptions: {
-            triggerHook: 'onLeave'
-          }
-        });
-
-        // get all slides
-        var slides = document.querySelectorAll("section.panel");
-
-        // create scene for every slide
-        for (var i=0; i<slides.length; i++) {
-          new ScrollMagic.Scene({
-              triggerElement: slides[i]
-            })
-            .setPin(slides[i])
-            .addIndicators() // add indicators (requires plugin)
-            .addTo(controller);
-        }
-      });
+      new WOW().init();
     </script>
     <script>
         $('.card-container').click(function(){
@@ -198,6 +169,7 @@
         return false;
     });
     </script>
+
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
