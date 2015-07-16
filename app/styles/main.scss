@@ -82,8 +82,10 @@ $Break3: 1000px;
 }
 
 
-.circle-one {
-  @include circle(60px, #999);
+.circle-one, .circle-two {
+  margin-left:50%;
+  margin-right:50%;
+  @include circle(90px, #5A9CE4);
 }
 
 .browsehappy {
