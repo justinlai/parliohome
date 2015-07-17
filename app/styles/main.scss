@@ -162,7 +162,8 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px  #e5e5e5;
+  background:none;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -214,26 +215,40 @@ body {
 }
 
 .section-wrapper{
-    padding: 50px;
+  padding: 50px;
 }
 
 /*CARDS*/
 
+.cards-wrapper {
+/*  margin-left: 50%;
+  margin-right: 50%;
+
+*/
+}
 .card-container {
   -webkit-perspective: 800;
-   width: 320px;
-   height: 320px;
-    position: relative;
-    margin: 50px auto;
+ @include MQ(XL){
+    width: 100%;
+    height: 100%;
+  }
+   position: relative;
+   padding: 10px;
 }
 .card-container .card.flipped {
   -webkit-transform: rotatex(-180deg);
 }
 .card-container .card {
   width: 100%;
-  height: 100%;
+  height: 150px;
+  text-overflow: hidden;
+  text-overflow: ellipsis;
+  @include MQ(XL){
+    height: 400px;
+  }
   -webkit-transform-style: preserve-3d;
   -webkit-transition: 0.5s;
+
 }
 .card-container .card .face {
   width: 100%;
@@ -241,10 +256,6 @@ body {
   position: absolute;
   -webkit-backface-visibility: hidden ;
   z-index: 2;
-    font-family: Georgia;
-    font-size: 3em;
-    text-align: center;
-    line-height: 200px;
 }
 .card-container .card .front {
   position: absolute;
@@ -261,5 +272,9 @@ body {
     color: black;
     cursor: pointer;
     border: 1px solid lightgray;
+}
+
+.heading {
+  text-align: left;
 }
 
