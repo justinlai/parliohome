@@ -1363,7 +1363,13 @@ body {
 
 .section-wrapper{
   padding: 50px;
+  display: table;
+  overflow:hidden;
 }
+
+.firstPos  { display: table-footer-group; }
+.secondPos { display: table-header-group; }
+
 
 /*CARDS*/
 
@@ -1526,6 +1532,17 @@ body {
   font-size: 16px;
 }
 
+.bottom-button{
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+}
+.btn-next {
+  background-color: #EE9437;
+  color: white;
+  border: 0px;
+  font-family: Helvetica-Light;
+}
 .user-pic {
     vertical-align: top;
   padding: 0 10px;
