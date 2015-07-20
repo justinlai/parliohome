@@ -31,22 +31,19 @@
       <img src="images/ParlioLogo.svg" class="wow bounceInDown">
       <div class="jumbotron">
         <h1>Parlio</h1>
+        <p>A forum for the <i>curious</i>, <i> civil</i>, and <i>open minded</i>.</p>
+
         <p><a class="btn btn-default" href="#">Sign In with LinkedIn</span></a></p>
         <p><a class="btn btn-default" href="#">Sign In with Facebook</span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-    
-        </div>
       </div>
     </div>
   </div>
 
   <div class="section panel" id="sect2">
-      <div class="wow2 circle-one stylie-transform-keyframes"></div>
 
     <div class="section-wrapper">
+<!--           <div class="wow2 circle-one stylie-transform-keyframes"></div>
+ -->
     <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
@@ -125,17 +122,76 @@
 </div>
 
   <div class="section panel" id="sect3">
+  <div class="section-wrapper">
     <div class="row">
+      <div class="col-md-12">
       <div class="col-md-7">
-    <div class="wow circle-one bounceInDown"></div>
+<!--         <div class="wow circle-one bounceInDown"></div>
+ -->        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+              <div class="member-wrapper wow fadeInDown">
+                <div class="user-pic">
+                </div>
+                <div class="user-info-wrapper">
+                <div class="user-info">
+                  <span class='title'>Nicholas Kristof</span>
+                  <span class='subhead'>Columnist and Author</span>
+                  </div>
+                </div>
+              </div>
+            </div><!--one card-->
+            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+              <div class="member-wrapper wow fadeInDown">
+                <div class="user-pic">
+                </div>
+                <div class="user-info-wrapper">
+                  <span class='title'>Nicholas Kristof</span>
+                  <span class='subhead'>Columnist and Author</span>
+                </div>
+              </div>
+            </div><!--one card-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+              <div class="member-wrapper wow fadeInDown">
+                <div class="user-pic">
+                </div>
+                <div class="user-info-wrapper">
+                  <div class="user-info">
+                  <span class='title'>Nicholas Kristof</span>
+                  <span class='subhead'>Columnist and Author</span>
+                  </div>
+                </div>
+              </div>
+            </div><!--one card-->
+            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+              <div class="member-wrapper wow fadeInDown">
+                <div class="user-pic">
+                </div>
+                <div class="user-info-wrapper">
+                  <span class='title'>Nicholas Kristof</span>
+                  <span class='subhead'>Columnist and Author</span>
+                </div>
+              </div>
+            </div><!--one card-->
+          </div>
+        </div>
+
       </div>
       <div class="col-md-4">
-        <h1>Parlio celebrates unique perspectives.</h1>
-        <p>We are a diverse community of articulate individuals who want to engage each other in civil, complex conversations about important current events.</p>
+        <div class="heading">
+          <h1>Parlio celebrates unique perspectives.</h1>
+          <p>We are a diverse community of articulate individuals who want to engage each other in civil, complex conversations about important current events.</p>
+        </div>
       </div>
       <div class="col-md-1"></div>
     </div>
   </div>
+  </div>
+</div>
   <div class="section panel" id="sect4">
   <img src="images/ParlioLogo.svg" class="wow bounceInDown">
     <h1>Parlio is for you</h2>
@@ -176,13 +232,20 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <script>
-      new WOW().init();
+      var wow= new WOW(
+      {
+        boxClass: 'wow',
+        offset: 0,
+        mobile: false,
+        live: true,
+      })
+      wow.init();
       var wow2= new WOW(
       {
         boxClass: 'wow2',
         animateClass: 'stylie',
         offset: 0,
-        mobile: true,
+        mobile: false,
         live: true,
       })
       wow2.init();

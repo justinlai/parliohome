@@ -90,8 +90,8 @@ $Break3: 1000px;
 }
 .circle-one {
   margin-left: 25%;
-  margin-top: -375px;
-}
+/*  margin-top: -375px;
+*/}
 
 .stylie {
   -moz-animation-name: stylie-keyframes;
@@ -1305,6 +1305,11 @@ body {
     font-size: 21px;
     padding: 14px 24px;
   }
+  h1 {
+    font-family: Helvetica;
+    color: $blue;
+  }
+ 
 }
 
 /* Supporting marketing content */
@@ -1393,6 +1398,8 @@ body {
   position: absolute;
   -webkit-backface-visibility: hidden ;
   z-index: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card-container .card .front {
   position: absolute;
@@ -1440,8 +1447,44 @@ body {
 
 .heading {
   text-align: left;
+  h1 {
+    @include MQ(S){
+      font-size: 24px;
+    }
+  }
   p {
     font-size: 20px;
+    @include MQ(S){
+      font-size: 16px;
+    }
   }
 }
 
+.member-wrapper{
+    border: 1px solid #B4BABF;
+  height: 80px;
+  display: block;
+  margin: 10px;
+  padding: 17px 0;
+}
+
+.user-info-wrapper {
+    display: table-cell;
+  vertical-align: middle;
+}
+
+.user-info {
+  max-height: 80px;
+  overflow: hidden;
+  font-family: Helvetica;
+  .title {
+    color: $blue;
+    font-size: 16px;
+    display: block;
+  }
+    .subhead{
+    font-size: 14px;
+    color: gray;
+  }
+
+}
