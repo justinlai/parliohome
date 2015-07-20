@@ -5,6 +5,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/fullpage.js/jquery.fullPage.scss";
 @import "bower_components/animate.css-scss/animate.scss";
 // endbower
+@import url(http://fonts.googleapis.com/css?family=Martel:400,200);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
 
 @mixin keyframes($animation-name) {
   @-webkit-keyframes $animation-name {
@@ -1448,12 +1450,15 @@ body {
 .heading {
   text-align: left;
   h1 {
+    font-family: 'Playfair Display', serif;
     @include MQ(S){
       font-size: 24px;
     }
   }
   p {
+    font-family: 'Martel', serif;
     font-size: 20px;
+    padding-top: 1em;
     @include MQ(S){
       font-size: 16px;
     }
@@ -1486,5 +1491,23 @@ body {
     font-size: 14px;
     color: gray;
   }
+}
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) 
+{ 
+    div[class^="col"]{padding-left:5px; padding-right:5px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) 
+{   
+    div[class^="col"]{padding-left:10px; padding-right:10px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) 
+{   
+    /*default so you don't need this*/
+    div[class^="col"]{padding-left:15px; padding-right:15px;}
 }
