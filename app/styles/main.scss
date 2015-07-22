@@ -192,15 +192,13 @@ $Break3: 1000px;
 }
 
 #cardOne {
-  background: #3D3D3D;
-  color: white;
 }
 #cardTwo {
+  color: black;
   border: 0px;
 }
 #cardThree {
-  background: rgba(55,121,197,0.84);
-  color: white;
+  color: black;
 }
 
 .card-container .card {
@@ -221,7 +219,6 @@ $Break3: 1000px;
 .card-wrapper, .member-wrapper {
   padding: 1.5em;
   text-align: center;
-
   .btn {
     background: white;
     color: black;
@@ -230,6 +227,13 @@ $Break3: 1000px;
     font-family: 'Playfair Display';
     font-style: italic;
     margin-top: 0.5em;
+  }
+  img {
+    margin-top: 2em;
+    @include MQ(S){
+      width: 0em;
+      height: 0em;
+    }
   }
 }
 
@@ -268,6 +272,7 @@ $Break3: 1000px;
 .user-info {
   overflow: hidden;
   font-family: Helvetica;
+  text-align: left;
   .title {
     color: $blue;
     font-size: 16px;
@@ -279,11 +284,10 @@ $Break3: 1000px;
   }
 }
 
-.user-pic{
+.user-pic {
   vertical-align: top;
   padding: 0 10px;
   display: table-cell;
-
 }
 
 
@@ -317,14 +321,9 @@ $Break3: 1000px;
   padding-top: 0.75em;
   font-family: 'Helvetica';
 }
-.user-pic {
-  vertical-align: middle;
-  padding: 0 10px;
-  display: table-cell;
-}
 .member-image {
-  width: 5em;
-  height: 5em;
+  width: 8em;
+  height: 8em;
   border-radius: 50%;
   padding: 0;
   border: 1px solid #fff;
@@ -332,6 +331,10 @@ $Break3: 1000px;
   margin-left: -1em;
   img {
     vertical-align: middle;
+  }
+  @include MQ(S){
+    width: 4em !important;
+    height: 4em !important;
   }
 }
 
