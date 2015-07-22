@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="/bower_components/fullpage.js/jquery.fullPage.css" />
     <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -39,262 +38,279 @@
         <a class="btn btn-block btn-social btn-adn btn-facebook"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
         <a class="btn btn-block btn-social btn-adn btn-linkedin"><i class="fa fa-linkedin"></i>Sign in with LinkedIn</a>
       </div>
-      <div class='bottom-button'>
-        <button type="button" class="btn-next btn-lg">What is Parlio?</button>      
+      <div class='bottom-button bounceInUp wow' id="homepagebutton"> 
+        <button type="button" class="btn-next btn-lg">What is Parlio?</button>   
       </div>
     </div>
     </div>
   </div>
 
-  <div class="section panel" id="sect2">
-
-    <div class="section-wrapper">
-<!--           <div class="wow2 circle-one stylie-transform-keyframes"></div>
- -->
+<div class="section panel" id="sect2">
     <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
       <div class="row">
-        <div class="col-md-6 col-md-offset-1">
+        <div class="col-md-7">
           <div class="heading">
-            <h1>Parlio is a place for <i>civil conversations.</i></h1>
-            <p>This is where you can ask the big questions, have the hard conversations and connect constructively about current events in our expanding world without trolls getting in the way.</p>
+            <h1>Engage in <i>thought-provoking</i> discussions.</h1>
+            <img src=
+            <p>Ask the big questions, have the hard conversations and connect constructively with other people about current events in our expanding world.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-container wow fadeInRight" data-wow-delay="0.5s" id="cardOne"> 
+            <div class="card">
+              <div class="card-wrapper">
+                <h3>Discuss your ideas</h3>
+                  <a class="btn" data-toggle="modal" data-target="#myModal">Read a post »</a>
+              </div>
+            </div> 
+          </div> 
+        </div>
+        <div class="col-md-4">
+          <div class="card-container wow fadeInRight" data-wow-delay="0.75s" id="cardTwo"> 
+            <div class="card">
+              <div class="card-wrapper">
+                <h3>Share your perspectives</h3>
+                <p>Get your questions answered by some of the greatest minds in the world</p> 
+                    <a class="btn" href="#">Read Q&A »</a>
+              </div>
+            </div> 
+          </div>    
+        </div>
+        <div class="col-md-4">
+          <div class="card-container wow fadeInRight" data-wow-delay="1s" id="cardThree"> 
+            <div class="card">
+              <div class="card-wrapper">
+                <h3>Talk with the Experts</h3>
+                <p>Get your questions answered by some of the greatest minds in the world</p> 
+                    <a class="btn" href="#">Read Q&A »</a>
+              </div>
+            </div> 
+          </div>   
         </div>
       </div>
     </div>
-  </div>
-                <div class="cards-wrapper">
-                <div class="row">
-                  <div class="col-md-3 col-md-offset-1">
-                    <div class="card-container"> 
-                        <div class="card wow fadeInRight" data-wow-delay="0.3s"""> 
-                          <div class="face front"> 
-                            <div class="card-wrapper">
-
-                                                        <div class='user-pic'>
-                              <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                            </div>
-                            <div class="user-info-wrapper">
-                            <div class="user-info">
-                            <span class="name">Shelly Culbertson</span>
-                              <span class="bio">Middle East Analyst at RAND Corporation</span>
-
-                            </div>
-                              </div>
-                            <p>Some declare the Arab Spring over and its revolutions a failure, with counterrevolutions ranging from political to violent. Tunisia is held up as the sole exception. However, what we are seeing is the beginning of profound changes in the Middle East.</p>
-                          </div>                         </div>
-
-                          <div class="face back"> 
-                            <div class="card-wrapper">
-                            <span class="about">Here, authors and journalists can engage with an audience about their writing.</span>
-                            </div>
-                          </div> 
-                        </div> 
-                      </div> 
-                  </div><!--end col-md-3 -->
-                  <div class="col-md-3">
-                                  <div class="card-container"> 
-                        <div class="card wow fadeInRight" data-wow-delay="0.3s"""> 
-                          <div class="face front"> 
-                            <div class="card-wrapper">
-
-
-                            <div class='user-pic'>
-                              <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                            </div>
-                            <div class="user-info-wrapper">
-                            <div class="user-info">
-                                                          <span class="name">Steven Pinker</span>
-                              <span class="bio">Johnstone Professor of Psychology, Harvard University</span>
-
-                            </div>
-                              </div>
-                              <p>With all due humility about our ability to predict the future, I'd venture that many factory farming practices will be seen by our descendants as barbaric, even if we never see worldwide vegetarianism. The toleration of prison rape, and the criminalization of victimless activities, particularly drug use, are other relatively easy advances...</p>
-                          </div>                         
-                        </div>
-
-                          <div class="face back"> 
-                            <div class="card-wrapper">
-                            <span class="about">At Parlio, intellectually provocative perspectives are freely shared and civilly discussed.</span>
-                            </div>
-                          </div> 
-                        </div> 
-                      </div> 
-           
-                  </div><!--end col-md-4 -->
-                  <div class="col-md-3">
-                               <div class="card-container"> 
-                        <div class="card wow fadeInRight" data-wow-delay="0.3s"""> 
-                          <div class="face front"> 
-                            <div class="card-wrapper">
-                            <div class='user-pic'>
-                              <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                            </div>
-                            <div class="user-info-wrapper">
-                            <div class="user-info">
-                                                          <span class="name">Thomas Friedman</span>
-                              <span class="bio">NY Times Columnist</span>
-
-                            </div>
-                              </div>
-                            <p> The short answer is to get back to our tried and true formula for success. We had a formula for success in this country that dates back to our first President and has been reinforced and reaffirmed by all the best ones since: 1) Educate our people up to and beyond whatever the level of technology is. When it was agriculture -- universal primary education, when it was the factory -- universal secondary education, when it is now services and the knowledge economy -- some form of universal post-secondary education…</p>
-                          </div>                         </div>
-
-                          <div class="face back"> 
-                          <div class="card-wrapper">
-                            <span class="about">Parlio is a place to ask big questions and open up a community to new knowledge of the world.</span>
-                            </div>
-                          </div> 
-                        </div> 
-                      </div> 
-              
-                  </div><!--end col-md-4 -->
-                </div>
-              </div>
-    </div>
-  </div>
-</div>
-
-  <div class="section panel" id="sect3">
-  <div class="section-wrapper">
-    <div class="row">
-      <div class="col-md-12 firstPos">
-      <div class="col-md-4 col-offset-1">
-        <div class="heading">
-          <h1>Join a community that <i>doesn't</i> share your views.</h1>
-          <p>We are a diverse community of articulate individuals who want to engage each other in civil, complex, controversial conversations about important current events.</p>
-        </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
-      <div class="col-md-7 secondPos">
-        <div class="row wow fadeInDown">
-          <div class="col-md-12">
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper wow fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row wow fadeInDown">
-          <div class="col-md-12">
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper wow fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row wow fadeInDown">
-          <div class="col-md-12">
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper wow fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row wow fadeInDown">
-          <div class="col-md-12">
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
-              <div class="member-wrapper wow fadeInDown">
-                <div class='user-pic'>
-                  <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
-                </div>
-                  <div class="user-info-wrapper">
-                  <div class="user-info">
-                  <span class="name">Shelly Culbertson</span>
-                  <span class="bio">Middle East Analyst at RAND Corporation</span>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
   </div>
 </div>
-  <div class="section panel" id="sect4">
+
+
+<div class="section panel" id="sect3">
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 firstPos">
+        <div class="col-md-4 col-offset-1">
+          <div class="heading">
+            <h1>Join a community that is eager to hear <i>insightful perspectives.</i></h1>
+            <p>We are a diverse community of articulate individuals who want to share their perspective and engage each other in civil, complex, controversial conversations.</p>
+          </div>
+        </div>
+        <div class="col-md-7 secondPos">
+          <div class="row wow fadeInDown">
+            <div class="col-md-12">
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper wow fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row wow fadeInDown">
+            <div class="col-md-12">
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper wow fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row wow fadeInDown">
+            <div class="col-md-12">
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper wow fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row wow fadeInDown">
+            <div class="col-md-12">
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper wow fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="row wow fadeInDown">
+            <div class="col-md-12">
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper wow fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="row wow fadeInDown">
+            <div class="col-md-12">
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 member-cell ng-scope">
+                <div class="member-wrapper wow fadeInDown">
+                  <div class='user-pic'>
+                    <img ng-src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1" class="member-image ng-scope" src="https://graph.facebook.com/10155126228320125/picture?type=large&amp;return_ssl_resources=1">
+                  </div>
+                    <div class="user-info-wrapper">
+                    <div class="user-info">
+                    <span class="name">Shelly Culbertson</span>
+                    <span class="bio">Middle East Analyst at RAND Corporation</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div class="section panel" id="sect4">
     <div class="container">
     <div class="row">
       <img src="images/ParlioLogo.svg" class="wow bounceInDown">
@@ -315,7 +331,6 @@
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
     <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
     <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
@@ -362,19 +377,7 @@
       wow2.init();
     </script>
     <script>
-        $('.card-container').click(function(){
-        $(this).find('.card').addClass('flipped').mouseleave(function(){
-            $(this).removeClass('flipped');
-        });
-        return false;
-    });
-    </script>
-    <script>
-    var myIcons = new SVGMorpheus('images/iconset.svg');
-    myIcons.to(parlio, cubic-in);
-    </script>
-    <script>
-    $('#button1Id').click(function(){
+    $('#homepagebutton').click(function(){
     $.fn.fullpage.moveSectionDown();
     });
     </script>
