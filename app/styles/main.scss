@@ -209,11 +209,14 @@ $Break3: 1000px;
   @include MQ(XL){
     height: 400px;
   }
-
   p {
     margin-top: 1em;
   }
-
+  h3 {
+    @include MQ(S){
+      font-size: 16px;
+    }
+  }
 }
 
 .card-wrapper, .member-wrapper {
